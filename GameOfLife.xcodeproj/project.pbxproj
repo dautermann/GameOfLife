@@ -141,7 +141,7 @@
 		25E1601E169B5BCC00BD5437 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0450;
+				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = "Michael Dautermann";
 			};
 			buildConfigurationList = 25E16021169B5BCC00BD5437 /* Build configuration list for PBXProject "GameOfLife" */;
@@ -242,6 +242,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

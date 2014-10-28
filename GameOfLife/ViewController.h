@@ -11,6 +11,8 @@
 @interface ViewController : UIViewController
 {
     UITapGestureRecognizer * mGestureRecognizer;
+    
+    IBOutlet UIButton *mStepButton;
 }
 
 - (NSInteger) howManyLiveNeighbors: (FunView *) whoIsAsking;

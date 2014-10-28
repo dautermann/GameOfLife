@@ -88,6 +88,13 @@
         mGestureRecognizer.delaysTouchesEnded = NO;
         [self.view addGestureRecognizer: mGestureRecognizer];
     }
+    
+    // sure, we could use a navigation bar to display the word "Step", but I'd like to display as many cells
+    // as possible in the limited screen real estate of an iOS device (especially the phone)
+    //
+    // doing this forces the "Step" button to always be on top, regardless of all the other "life cells"
+    // (or subviews) added underneath it.
+    mStepButton.layer.zPosition = MAXFLOAT;
 }
 
 - (FunView *) getViewAtSpecificX: (NSInteger) x andY: (NSInteger) y
@@ -163,7 +170,7 @@
 {
     UIColor * colorToReturn;
     
-    uint32_t randomNumber = random();
+    uint32_t randomNumber = (uint32_t)random();
     randomNumber = (randomNumber % 10); // a random number between 0 & 10
     
     switch(randomNumber)
